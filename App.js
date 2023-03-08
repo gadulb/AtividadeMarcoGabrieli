@@ -43,20 +43,20 @@ export default function App(){
           }}
         />
         <Tab.Screen name="About" component={AboutScreen} 
-        /*options={{
+        options={{
           tabBarLabel: 'About',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="about" color={color} size={26} />
+            <MaterialCommunityIcons name="plus" color={color} size={26} />
             ),
-          }}*/
+          }}
         />
         <Tab.Screen name="Contato" component={ContatoScreen} 
-        /*options={{
+        options={{
           tabBarLabel: 'Contato',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="contact" color={color} size={26} />
+            <MaterialCommunityIcons name="phone" color={color} size={26} />
             ),
-          }}*/
+          }}
         />
       </Tab.Navigator>
     </NavigationContainer>
