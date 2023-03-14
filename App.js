@@ -3,6 +3,13 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { TextInput } from 'react-native-paper';
+ 
+function LoginScreen(){
+  return (
+    <text>Me joguei</text>
+  );
+};
 
 function HomeScreen() {
   return (
@@ -34,6 +41,14 @@ export default function App(){
   return (
     <NavigationContainer>
       <Tab.Navigator activeColor="#e91e63" style={{ backgroundColor: 'tomato' }}>
+        <Tab.Screen name="Logiin" component={LoginScreen} 
+        options={{
+          tabBarLabel: 'Login',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="login" color={color} size={26} />
+            ),
+          }}
+        />
         <Tab.Screen name="Home" component={HomeScreen} 
         options={{
           tabBarLabel: 'Home',
